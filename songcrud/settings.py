@@ -38,10 +38,20 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # localapps
+    # 3rd party
+    'rest_framework',
+
+    # local
     'musicapp',
 ]
 
+RESt_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": {
+        "rest_framework.permission.AllowAny"
+    }
+
+ 
+}
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
